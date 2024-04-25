@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Layout.AbsoluteLayoutPage" Title="Absolute Layout Page">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="20" VerticalOptions="CenterAndExpand">
+            <Image Source="absoluteLayoutImage.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="{OnPlatform iOS=400, Android=500}"
+                   AbsoluteLayout.LayoutBounds="125, 25, 100, 200"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="AbsoluteLayout Example"
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand"
+                         AbsoluteLayout.LayoutBounds="0, 0, 350, 400"
+                         FontAttributes="Bold"
+                         FontSize="15"
+                         TextColor="DeepPink"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
